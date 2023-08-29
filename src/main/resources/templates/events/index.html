@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head th:replace="fragments :: head"></head>
+<body class="container">
 
-<head th:replace="fragments :: head" ></head>
+<header th:replace="fragments :: header"></header>
 
+<table class="table table-striped">
+  <thead>
+      <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+      </tr>
+  </thead>
+    <tbody>
 
-<body>
-<h1>All Events</h1>
+        <tr th:each="event : ${events}">
+            <td></td>
+            <td th:text="${event}"></td>
 
-<nav th:replace="fragments :: navigation"></nav>
+        </tr>
+    </tbody>
+</table>
 
-
-<p th:unless="${events} and ${events.size()}">No Events</p>
-
-<ul>
-<th:block th:each="event : ${events}">
-  <li th:text="${event}"></li>
-</th:block>
-</ul>
 
 </body>
 </html>
