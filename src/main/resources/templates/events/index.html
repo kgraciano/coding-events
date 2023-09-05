@@ -8,16 +8,13 @@
 <table class="table table-striped">
   <thead>
       <tr>
-          <th scope="col">#</th>
-          <th scope="col">Name</th>
+          <th>Name</th>
       </tr>
   </thead>
     <tbody>
 
         <tr th:each="event : ${events}">
-            <td></td>
-            <td th:text="${event}"></td>
-
+            <td th:text="${event.name}"></td>
         </tr>
     </tbody>
 </table>
