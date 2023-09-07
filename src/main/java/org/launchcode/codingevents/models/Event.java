@@ -4,7 +4,15 @@ import java.util.Objects;
 
 public class Event {
 
+    //adding a unique identifier in order to remove events
+    // a unique identifier will id the object that is stored to make sure we remove the object
+
     private int id;
+
+    // nextId
+    // static is used in int nextId to update the number with each object created
+    // nextId is shared by all class instances
+    //nextId++ adds 1 to id when an object is created
     private static int nextId = 1;
 
     private String name;
