@@ -38,5 +38,8 @@ public class EventController {
        return "redirect:";
     }
 
-
+//@RequestParam String eventName is the parameter that is passed in from user input
+    //we then use eventName to add it to events list by creating an instance of the Event model class
+    //so every eventName will be an object of Event.
+    //List<Event> means it will be a list of object type Event that we created.
     }
