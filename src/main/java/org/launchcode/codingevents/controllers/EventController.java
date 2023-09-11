@@ -61,7 +61,7 @@ public class EventController {
 
         }
 
-        //finish exercises for model-binding
+        //finish exercises for model-binding and model validation
     }
 
 
